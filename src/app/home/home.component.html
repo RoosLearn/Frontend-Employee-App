@@ -1,0 +1,43 @@
+<!-- <div class="container mt-3">
+    <h2>Employee Dashboard</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.id }}</td>
+          <td>{{ employee.name }}</td>
+          <td>{{ employee.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div> -->
+
+ 
+
+ 
+
+   <!-- Second card view -->
+
+   <div class="card-container">
+    <div class="card" *ngFor="let employee of employees">
+      <h3><span>Name: </span>{{ employee.name }}</h3>
+      <p><span>Email: </span>{{ employee.email }}</p>
+      <ul>
+        <li><span>ID:</span> {{ employee.id }}</li>
+        <!-- <li><span>Designation:</span> {{ employee.designation }}</li>
+        <li><span>Location:</span> {{ employee.location }}</li>
+        <li><span>Salary:</span> {{ employee.salary }}</li>  -->
+      </ul>
+    </div>
+  </div>
+   
+
+   
+    
+  
